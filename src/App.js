@@ -11,6 +11,14 @@ function App() {
   };
   return (
     <div className="App">
+      <h1>Hallo, ich bin Nathania</h1>
+      <p>
+        Scannen Sie den Code, um{" "}
+        {selectedTab === "linkedin"
+          ? "mein LinkedIn Profil"
+          : "meinen Lebenslauf"}{" "}
+        zu schauen.
+      </p>
       <Qrcode selectedTab={selectedTab} />
       <Tabs selectedTabEvent={selectedTabEvent} />
     </div>
