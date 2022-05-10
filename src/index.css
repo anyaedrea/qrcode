@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, body, #root {
+  height: 100%;
+}
+
+:root {
+  --color-primary: hsl(278, 80%, 14%);
+  --color-secondary: hsl(267, 100%, 83%);
+  --color-accent: hsl(39, 100%, 65%);
+}

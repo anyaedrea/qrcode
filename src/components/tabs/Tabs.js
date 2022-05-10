@@ -8,26 +8,29 @@ function Tabs({ selectedTabEvent }) {
     selectedTabEvent(e.target.value);
   };
   return (
-    <div>
-      <div className="tabs-container">
-        <label for="cv">CV</label>
+    <div className="tabs-container">
+      <div className="tabs">
+        {/* <div className="indicator"></div> */}
         <input
           type="radio"
           name="radio-option"
           id="cv"
           value="cv"
-          onClick={handleClick}
+          onChange={handleClick}
+          defaultChecked
         />
-        <label for="linkedin">
-          <FontAwesomeIcon icon={faLinkedinIn} />
-        </label>
+        <label for="cv">CV</label>
         <input
           type="radio"
           name="radio-option"
           id="linkedin"
           value="linkedin"
-          onClick={handleClick}
+          onChange={handleClick}
         />
+        <label for="linkedin">
+          {/* <FontAwesomeIcon icon={faLinkedinIn} /> */}
+          LinkedIn
+        </label>
       </div>
     </div>
   );

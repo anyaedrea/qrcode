@@ -1,8 +1,13 @@
 import React from "react";
+import "./Qrcode.css";
 
 function Qrcode({ selectedTab }) {
+  let options = {
+    bgcolor: "CFA9FF",
+  };
   const setLink = () => {
-    let link = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=";
+    let link = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&bgcolor=${options.bgcolor}&data=`;
+    console.log(link);
     if (selectedTab === "linkedin") {
       return (
         link + "https://www.linkedin.com/in/nathania-edrea-haryanto-70a688232/"
@@ -14,7 +19,7 @@ function Qrcode({ selectedTab }) {
     );
   };
   return (
-    <div>
+    <div className="qrcode-bg">
       <img src={setLink()}></img>
     </div>
   );

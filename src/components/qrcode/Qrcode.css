@@ -1,0 +1,10 @@
+.qrcode-bg {
+    width: 100%;
+    background-color: var(--color-secondary);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+}
