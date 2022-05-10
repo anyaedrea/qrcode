@@ -1,5 +1,7 @@
 import React from "react";
 import "./Qrcode.css";
+import linkedInCode from "../../images/linkedin-qrcode.png";
+import cvCode from "../../images/cv-qrcode.png";
 
 function Qrcode({ selectedTab }) {
   let options = {
@@ -20,7 +22,7 @@ function Qrcode({ selectedTab }) {
   };
   return (
     <div className="qrcode-bg">
-      <img src={setLink()}></img>
+      <img src={selectedTab === "linkedin" ? linkedInCode : cvCode}></img>
     </div>
   );
 }
